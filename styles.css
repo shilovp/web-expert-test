@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 750px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 10px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#userList {
+    list-style: none;
+    padding: 0;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #fafafa;
+    width: 100%;
+}
+
+.user-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #6f71ea;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-item button:hover {
+    background-color: #474acd;
+}
+
+.user-item button:last-child {
+    background-color: #ff4d4d;
+}
+
+.user-item button:last-child:hover {
+    background-color: #e60000;
+}
+
+#addUserForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #339536;
+}
+
+.edit-form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background: #0056b3;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-content label {
+    width: 100%;
+}
+
+.popup-content input {
+    width: 95%;
+    margin-top: 6px;
+    padding: 7px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content #saveUserBtn {
+    background-color: #4caf50;
+    border: 0;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup-content #saveUserBtn:hover {
+    background-color: #479f4a;
+}
+
+.popup-content button.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.popup-content button.close-popup:hover {
+    color: #e60000;
+}
