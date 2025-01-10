@@ -40,11 +40,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    border: 1px solid #ddd;
+    padding: 20px 10px;
+    border: 1px solid #f5efef;
     margin-bottom: 10px;
     border-radius: 4px;
-    background: #fafafa;
+    background: #fff;
     width: 100%;
 }
 
@@ -77,14 +77,14 @@ h2 {
 }
 
 form input {
-    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 20px;
+    width: 100%;
     border: none;
     background-color: #4caf50;
     color: white;
